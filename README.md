@@ -8,8 +8,8 @@ This repository contains two FIFO implementations and their testbenches:
 - **Dual-Clock FIFO** – Asynchronous design with independent read/write clocks .
 
 ---
-```
 ## 📁 Repository Structure
+```
 fifo-design/
 ├── src/
 │   ├── s_fifo.v       
