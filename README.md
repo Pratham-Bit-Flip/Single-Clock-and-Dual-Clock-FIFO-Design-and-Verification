@@ -62,15 +62,19 @@ It’s essential for **cross-clock-domain data transfer**, where two subsystems 
 ## 📁 Repository Structure
 ```
 fifo-design/
-├── src/
-│   ├── s_fifo.v       
-│   └── d_fifo.v         
+├── src/ 
+│ ├── s_fifo.v 
+│ └── d_fifo.v 
 │
-├── tb/
-│   ├── s_fifo_tb.v    
-│   └── d_fifo_tb.v       
+├── testbench/ 
+│ ├── s_fifo_tb.v
+│ ├── d_fifo_tb.v
+│ │
+│ └── waveforms/ 
+│ ├── single clock.png 
+│ └── dual clock.png 
 │
-└── README.md                
+└── README.md               
 ```
 ---
 ## 🔍 Verification
@@ -88,6 +92,46 @@ vvp fifo_tb
 gtkwave dump.vcd
 ```
 ---
+
+---
+
+## 📊 Simulation Results
+
+The following waveforms were generated using **GTKWave** after running the testbenches.  
+They verify correct read/write behavior, flag logic (`full`, `empty`), and pointer transitions.
+
+### 🔸 Single-Clock FIFO
+<p align="center">
+  <img src="testbench/waveforms/single clock.png" width="700">
+</p>
+
+- Common clock for read/write  
+- Smooth data enqueue–dequeue operation  
+- Proper `full` and `empty` flag behavior verified  
+
+---
+
+### 🔸 Dual-Clock FIFO
+<p align="center">
+  <img src="testbench/waveforms/dual clock.png" width="700">
+</p>
+
+- Independent read and write clocks  
+- Gray-coded pointer synchronization verified  
+- No metastability or data loss observed  
+- Safe cross-clock data transfer demonstrated  
+
+---
+
+## 🧠 Verification Summary
+
+| Testbench | Verification Focus | Status |
+|------------|--------------------|---------|
+| `s_fifo_tb.v` | Functional correctness, flag logic | ✅ Passed |
+| `d_fifo_tb.v` | CDC behavior, Gray code sync, data integrity | ✅ Passed |
+
+---
+
 ## 🧰 Tools Used
 
 - Icarus Verilog – Simulation
