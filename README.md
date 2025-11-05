@@ -138,7 +138,6 @@ They verify correct read/write behavior, flag logic (`full`, `empty`), and point
 - GTKWave – Waveform viewing  This project demonstrates design and verification of Single-Clock and Dual-Clock FIFOs in Verilog HDL.
 - Yosys – Optional synthesis check
 ---
----
 ## 📜 Summary
 This project demonstrates design and verification of Single-Clock and Dual-Clock FIFOs in Verilog HDL.
 It covers both synchronous and asynchronous buffering techniques, flag management, and verification methodology, suitable for FPGA or ASIC workflows.
