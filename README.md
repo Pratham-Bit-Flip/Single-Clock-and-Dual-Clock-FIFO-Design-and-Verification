@@ -55,6 +55,20 @@ It’s essential for **cross-clock-domain data transfer**, where two subsystems 
 
 ---
 
+## 📁 Repository Structure
+```
+fifo-design/
+├── src/
+│   ├── s_fifo.v       
+│   └── d_fifo.v         
+│
+├── tb/
+│   ├── s_fifo_tb.v    
+│   └── d_fifo_tb.v       
+│
+└── README.md                
+```
+---
 ## 🔍 Verification
 
 Both FIFOs are verified using self-checking testbenches (`s_fifo_tb.v`, `d_fifo_tb.v`) that:
@@ -70,16 +84,3 @@ vvp fifo_tb
 gtkwave dump.vcd
 ```
 ---
-## 📁 Repository Structure
-```
-fifo-design/
-├── src/
-│   ├── s_fifo.v       
-│   └── d_fifo.v         
-│
-├── tb/
-│   ├── s_fifo_tb.v    
-│   └── d_fifo_tb.v       
-│
-└── README.md                
-```
