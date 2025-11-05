@@ -84,3 +84,8 @@ vvp fifo_tb
 gtkwave dump.vcd
 ```
 ---
+## 🧰 Tools Used
+
+- Icarus Verilog – Simulation
+- GTKWave – Waveform viewing
+- Yosys – Optional synthesis check
