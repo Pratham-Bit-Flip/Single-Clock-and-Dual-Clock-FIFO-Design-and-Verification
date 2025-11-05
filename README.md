@@ -1,4 +1,7 @@
 # Single-Clock and Dual-Clock FIFO Design and Verification
+
+This repository contains two FIFO (First In, First Out) implementations in **Verilog HDL**, along with there testbenches for functional verification.
+---
 ## 🧠 What is a FIFO?
 
 A **FIFO (First In, First Out)** is a memory buffer that stores and retrieves data in the same order it was received — the first data written is the first data read.  
@@ -89,3 +92,17 @@ gtkwave dump.vcd
 - Icarus Verilog – Simulation
 - GTKWave – Waveform viewing
 - Yosys – Optional synthesis check
+---
+
+## 📜 Summary
+
+This project demonstrates design and verification of Single-Clock and Dual-Clock FIFOs in Verilog HDL.
+It covers both synchronous and asynchronous buffering techniques, flag management, and verification methodology, suitable for FPGA or ASIC workflows.
+---
+## 👨‍💻 Author
+Pratham-Bit-Flip 
+VLSI Enthusiast
+📧 Email: [prathameshbdesai@gmail.com]
+🔗 LinkedIn: [linkedin.com/in/pratham](https://www.linkedin.com/in/prathameshdesai1526/)
+💼 GitHub: [github.com/pratham-bit-flip](https://github.com/Pratham-Bit-Flip)
+---
